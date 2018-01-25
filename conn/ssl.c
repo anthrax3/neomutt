@@ -955,7 +955,7 @@ static int interactive_check_cert(X509 *cert, int idx, size_t len, SSL *ssl, int
   struct Menu *menu = mutt_new_menu(MENU_GENERIC);
   int done, row;
   FILE *fp = NULL;
-  int ALLOW_SKIP = 0; /**< All caps tells Coverity that this is effectively a preproc condition */
+  int ALLOW_SKIP = 0; /* All caps tells Coverity that this is effectively a preproc condition */
 
   mutt_push_current_menu(menu);
 
